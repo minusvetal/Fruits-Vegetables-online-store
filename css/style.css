@@ -138,40 +138,87 @@ body {
   margin: 0 auto;
 }
 
-.title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-  font-family: "Cerebri";
-  font-weight: 800;
-  font-size: 14px;
-  line-height: 30px;
-}
-
-.header-contacts {
-  background-color: #000;
-}
-
-.header-contacts__email {
+.header-top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 12px;
+  background-color: #000;
   color: #fff;
 }
 
-.header-contacts__email-text {
-  color: #fff;
+.header-top__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
 }
 
-.header-contacts .icon-email-black {
-  width: 30px;
-  height: 30px;
+.header-top__email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  display: flex;
+  align-items: center;
+  padding: 12px 17px 12px 0;
+  color: inherit;
+}
+
+.header-top__email:hover {
+  color: #7fad39;
+}
+
+.header-top__email:hover .icon-email-top {
+  fill: #7fad39;
+}
+
+.header-top__email .icon-email-top {
+  width: 24px;
+  height: 24px;
   margin-right: 10px;
+  fill: #fff;
+}
+
+.header-top__text {
+  padding: 0 25px 0 20px;
+  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  color: #ffffff;
+}
+
+.header-top__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 20px;
+}
+
+.header-top .icon-top-social {
+  width: 18px;
+  height: 18px;
+  fill: #fff;
+}
+
+.header-top .icon-top-social:hover {
+  fill: #7fad39;
 }
 /*# sourceMappingURL=style.css.map */
