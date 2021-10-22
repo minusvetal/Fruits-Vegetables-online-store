@@ -583,4 +583,83 @@ select {
 .discount-wrapper {
   left: -8%;
 }
+
+.categories {
+  position: relative;
+}
+
+.categories .icon-slide {
+  width: 60px;
+  height: 60px;
+}
+
+.categories__suptitle {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 30px;
+  color: #7fad39;
+}
+
+.categories__title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 30px;
+  color: #2a2a2a;
+  margin-bottom: 40px;
+}
+
+.categories__slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.categories__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 178px;
+  min-width: 128px;
+  padding: 15px 0;
+  background-color: #fff;
+}
+
+.categories__slide-text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #2a2a2a;
+  padding-top: 10px;
+}
+
+.categories .icon-cat-arrow {
+  width: 29px;
+  height: 29px;
+}
+
+.categories__container {
+  overflow: hidden;
+}
+
+.categories__arrow-left, .categories__arrow-right {
+  position: absolute;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.categories__arrow-right {
+  top: 67%;
+  left: 18%;
+}
+
+.categories__arrow-left {
+  top: 67%;
+  right: 18%;
+}
 /*# sourceMappingURL=style.css.map */
