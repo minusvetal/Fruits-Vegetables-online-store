@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.min.css">
   <title>Fruits and Vegetables online store</title>
 </head>
@@ -65,7 +66,7 @@
           <svg class="icon icon-marker-top ">
             <use href="images/icons/sprite.svg#marker-top"></use>
           </svg>
-          <select class="header__select">
+          <select class="header-search__select">
             <option value="Gurugram">Gurugram</option>
             <option value="Кушугум">Кушугум</option>
             <option value="Kushugum">Kushugum</option>
@@ -94,8 +95,6 @@
                 <option value="user">Jon Dou</option>
                 <option value="quit">Quit</option>
               </select>
-
-
             </div>
           </div>
         </div>
@@ -133,9 +132,9 @@
               <use href="images/icons/sprite.svg#shopping_cart"></use>
             </svg>
             <select class="header-navbar__cart-select">
-              <option value="cart1">cart1</option>
-              <option value="cart2">cart3</option>
-              <option value="cart3">cart2</option>
+              <option class="value" value="cart1">cart <span class="value__num">0</span></option>
+              <option class="value" value="cart2">cart <span class="value__num">1</span></option>
+              <option class="value" value="cart3">cart <span class="value__num">3</span></option>
             </select>
           </div>
 
@@ -144,7 +143,106 @@
     </div>
   </header>
 
+  <main class="main">
 
+    <section class="discount">
+      <div class="discount-wrapper swiper-wrapper">
+        <!-- 01 -->
+        <div class="discount__items swiper-slide">
+          <img class="discount__item-img" src="./images/discuont-bg-01.png" alt="фото товара">
+          <div class="discount__item">
+            <span class="discount__item-percent ">
+              6% OFF
+            </span>
+            <h3 class="discount__item-title"> Buy More & Save More </h3>
+            <span class="discount__item-text">Beverage</span>
+          </div>
+          <a href="#" class="discount__item-link">Shop now</a>
+        </div>
+        <!-- 02 -->
+        <div class="discount__items swiper-slide">
+          <img class="discount__item-img" src="./images/discuont-bg-02.png" alt="фото товара">
+          <div class="discount__item">
+            <span class="discount__item-percent ">
+              10% OFF
+            </span>
+            <h3 class="discount__item-title"> Buy More & Save More </h3>
+            <span class="discount__item-text">Nuts & Snacks</span>
+          </div>
+          <a href="#" class="discount__item-link">Shop now</a>
+        </div>
+        <!-- 03 -->
+        <div class="discount__items swiper-slide">
+          <img class="discount__item-img" src="./images/discuont-bg-03.png" alt="фото товара">
+          <div class="discount__item">
+            <span class="discount__item-percent ">
+              8% OFF
+            </span>
+            <h3 class="discount__item-title"> Buy More & Save More </h3>
+            <span class="discount__item-text">Fresh Vegetables</span>
+          </div>
+          <a href="#" class="discount__item-link">Shop now</a>
+        </div>
+
+        <!-- 04 -->
+        <div class="discount__items swiper-slide">
+          <img class="discount__item-img" src="./images/discuont-bg-04.png" alt="фото товара">
+          <div class="discount__item">
+            <span class="discount__item-percent ">
+              25% OFF
+            </span>
+            <h3 class="discount__item-title"> Buy More & Save More </h3>
+            <span class="discount__item-text">Fresh Fruits</span>
+          </div>
+          <a href="#" class="discount__item-link">Shop now</a>
+        </div>
+
+        <!-- 05 -->
+        <div class="discount__items swiper-slide">
+          <img class="discount__item-img" src="./images/discuont-bg-05.png" alt="фото товара">
+          <div class="discount__item">
+            <span class="discount__item-percent ">
+              15% OFF
+            </span>
+            <h3 class="discount__item-title"> Buy More & Save More </h3>
+            <span class="discount__item-text">Eggs & Dairy</span>
+          </div>
+          <a href="#" class="discount__item-link">Shop now</a>
+        </div>
+
+      </div>
+      </div>
+    </section>
+
+    <section class="categories">
+      <div class="container">
+        <div class="categories-container">
+          <div class="categories__subtitle">Shop By</div>
+          <h3 class="categories__title">Categories</h3>
+        </div>
+
+        <div class="categories__slider">
+          <!-- 01 -->
+          <div class="categories__slide">
+            <svg class="icon icon-slide ">
+              <use href="images/icons/sprite.svg#apple"></use>
+            </svg>
+            <span class="categories__slide-text">Vegetables & Fruits</span>
+          </div>
+          <!-- 02 -->
+          <div class="categories__slide">
+            <svg class="icon icon-slide ">
+              <use href="images/icons/sprite.svg#basket"></use>
+            </svg>
+            <span class="categories__slide-text">Grocery & Staples</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
