@@ -1,21 +1,51 @@
-const discount = new Swiper(".discount", {
-	slidesPerView: 5,
-	// centeredSlides: true,
-	spaceBetween: 40,
-	grabCursor: true,
-	loop: true,
+// slick
+
+$(document).ready(function () {
+	$(".discount-wrapper").slick({
+		slidesToShow: 4.9,
+		infinite: true,
+		arrows: false,
+	});
 });
 
-// categories
+$(document).ready(function () {
+	$(".categories__slider").slick({
+		slidesToShow: 6,
+		slidesToScroll: 1,
+		prevArrow: `
+			<button class="categories__arrow-left" type="button">
+				<svg class="icon icon-cat-arrow ">
+					<use href="images/icons/sprite.svg#cat-arrow-right"></use>
+				</svg>
+			</button>
+		`,
+		nextArrow: `
+	  <button class="categories__arrow-right" type="button">
+            <svg class="icon icon-cat-arrow ">
+              <use href="images/icons/sprite.svg#cat-arrow-right"></use>
+            </svg>
+          </button>
+		`,
+	});
+});
 
-const categories = new Swiper(".categories__container", {
-	slidesPerView: 6,
-	spaceBetween: 25,
-	grabCursor: true,
-	loop: true,
-	direction: "horizontal",
-	navigation: {
-		nextEl: ".categories__arrow-right",
-		prevEl: ".categories__arrow-left",
-	},
+$(document).ready(function () {
+	$(".product-slider").slick({
+		infinite: true,
+		slidesToShow: 4.999,
+		prevArrow: `
+			 <button class="product-slider__arrow-left" type="button">
+            <svg class="icon icon-cat-arrow ">
+              <use href="images/icons/sprite.svg#cat-arrow-right"></use>
+            </svg>
+          </button>
+		`,
+		nextArrow: `
+	   <button class="product-slider__arrow-right" type="button">
+            <svg class="icon icon-cat-arrow ">
+              <use href="images/icons/sprite.svg#cat-arrow-right"></use>
+            </svg>
+          </button>
+		`,
+	});
 });
