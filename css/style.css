@@ -1143,11 +1143,13 @@ img {
   font-size: 24px;
 }
 
-.product-count__num {
+.product-count .quantity {
   font-weight: 800;
   font-size: 12px;
   line-height: 22px;
   color: #2a2a2a;
+  width: 20px;
+  text-align: center;
 }
 
 .offers__list {
@@ -1345,16 +1347,73 @@ img {
   display: flex;
 }
 
-.footer-right__title {
-  display: block;
+.footer-right__title, .footer-right__form-title {
   font-weight: 800;
   font-size: 20px;
   line-height: 30px;
+  margin-bottom: 20px;
 }
 
 .footer-right__app-img {
   width: 212px;
   height: 63px;
+  margin-right: 10px;
+  margin-bottom: 40px;
+}
+
+.footer-right__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.footer-right__form-input {
+  width: 100%;
+  padding: 25px;
+}
+
+.footer-right__form-input::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.footer-right__form-input:-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.footer-right__form-input::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.footer-right__form-input::placeholder {
+  font-size: 14px;
+  line-height: 14px;
+  color: #757575;
+}
+
+.footer-right__form-btn {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: inherit;
+  padding: 25px 45px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 18px;
+  background: #7fad39;
+}
+
+.footer-right__payment {
+  margin-top: 40px;
 }
 
 .footer-right__payment-item {
@@ -1371,6 +1430,10 @@ img {
 }
 
 .footer-copyright {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  text-transform: lowercase;
   color: #fff;
 }
 /*# sourceMappingURL=style.css.map */
